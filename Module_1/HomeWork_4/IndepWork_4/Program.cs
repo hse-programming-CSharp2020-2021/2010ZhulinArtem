@@ -5,13 +5,15 @@ namespace IndepWork_4
 {
     class Program
     {
-        static public int Multiple(int M, int N)
+        static public int Multiple(uint M, uint N)
         {
-            return (2 << N-1) + (2 << M-1);
+            var firstNumber = N == 0 ? 1 : 2 << (int) N - 1;
+            var secondNumber = M == 0 ? 1 : 2 << (int) M - 1;
+            return firstNumber + secondNumber;
         }
         static void Main(string[] args)
         {
-            int M,N;
+            uint M,N;
             do
             {
                 Clear();
@@ -19,11 +21,11 @@ namespace IndepWork_4
                 do
                 {
                     Write("Введите значение N: ");
-                } while (!int.TryParse(ReadLine(), out N));
+                } while (!uint.TryParse(ReadLine(), out N));
                 do
                 {
                     Write("Введите значение M: ");
-                } while (!int.TryParse(ReadLine(), out M));
+                } while (!uint.TryParse(ReadLine(), out M));
                 
                 Clear();
 
