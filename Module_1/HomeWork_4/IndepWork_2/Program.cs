@@ -4,33 +4,36 @@ namespace IndepWork_2
 {
     class Program
     {
-        public static void SumNegNum(ref int sum)
+        public static void SumNegNum(ref int sum, ref int count)
         {
             Console.Write("Введите свое число: ");
-            if (int.TryParse(Console.ReadLine(), out int number))
+            if (int.TryParse(Console.ReadLine(), out int number) && number < 0)
             {
-                sum +=  number < 0 ? number : 0;
+                sum +=  number;
+                count++;
             }
             else
             {
                 Console.WriteLine("Введены некоректные данные");
             }
+
         }
         static void Main(string[] args)
         {
             do
             {
                 var sum = 0;
+                var count = 0;
                 while (true)
                 {
                     Console.Clear();
 
-                    SumNegNum(ref sum);
+                    SumNegNum(ref sum, ref count);
 
                     Console.WriteLine("Для прекращения ввода ESC, для продолжения любую другую клавишу...");
                     if (sum < -999 || Console.ReadKey(true).Key == ConsoleKey.Escape)
                     {
-                        Console.WriteLine($"Сумма отрицательных чисел: {sum}");
+                        Console.WriteLine($"Среднее арифметическое отрицательных чисел: {sum * 1.0 / count}");
                         break;
                     }
                 }
