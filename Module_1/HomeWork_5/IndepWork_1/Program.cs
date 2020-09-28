@@ -18,7 +18,7 @@ namespace IndepWork_1
 
             for (int i = 0; i < N; i++)
             {
-                newarr[i] = 2<<i;
+                newarr[i] = 1<<i;
             }
 
             return newarr;
