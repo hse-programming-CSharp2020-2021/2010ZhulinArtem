@@ -50,8 +50,16 @@ namespace Task_1
         private static void StartNotepadWindows()
         {
             WriteLine("It's Windows.");
-            Process.Start(pathToNotepad, inputPath);
-            Process.Start(pathToNotepad, outputPath);
+
+            try
+            {
+                Process.Start(pathToNotepad, inputPath);
+                Process.Start(pathToNotepad, outputPath);
+            }
+            catch (FileNotFoundException exception)
+            {
+                WriteLine($"Didn't find a notepad. Error Message:\n{exception.Message}");
+            }
         }
 
 
