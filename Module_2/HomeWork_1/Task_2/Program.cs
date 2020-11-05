@@ -7,7 +7,30 @@ namespace Task_2
         private static Random random = new Random();
         private static void Main(string[] args)
         {
-            int valueofFirst
+            int valueofAFirst, valueofASecond;
+            int valueofBFirst, valueofBSecond;
+            do
+            {
+                Console.Write("Enter value n of matrix A: ");
+            } while (!int.TryParse(Console.ReadLine(), out valueofAFirst) | valueofAFirst < 1);
+
+            do
+            {
+                Console.Write("Enter value m of matrix A: ");
+            } while (!int.TryParse(Console.ReadLine(), out valueofASecond) | valueofASecond < 1);
+
+            do
+            {
+                Console.Write("Enter value n of matrix B: ");
+            } while (!int.TryParse(Console.ReadLine(), out valueofBFirst) | valueofBFirst < 1);
+
+            do
+            {
+                Console.Write("Enter value m of matrix B: ");
+            } while (!int.TryParse(Console.ReadLine(), out valueofBSecond) | valueofBSecond < 1);
+
+            MaxToString(MatrixMult(CreateMatrix(valueofAFirst,valueofASecond),CreateMatrix(valueofBFirst,valueofBSecond)));
+
         }
 
         private static int[,] CreateMatrix(int m,int n)
@@ -60,7 +83,7 @@ namespace Task_2
             {
                 for (var j = 0; j < matrix.GetLength(1); j++)
                 {
-                    Console.WriteLine($"{matrix[i,j],3}");
+                    Console.Write($"{matrix[i,j],3}");
                 }
             }
         }
