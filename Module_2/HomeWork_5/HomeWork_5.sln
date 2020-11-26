@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_3", "Task_3\Task_3.csproj", "{D8BD9EF6-69A3-495F-93C4-108581C1E729}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_4", "Task_4\Task_4.csproj", "{01CC555D-768F-4179-888C-4E72E31CE923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_7", "Task_7\Task_7.csproj", "{E9AB480E-BED5-40DF-AA23-A058A8EB6FF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8BD9EF6-69A3-495F-93C4-108581C1E729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8BD9EF6-69A3-495F-93C4-108581C1E729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8BD9EF6-69A3-495F-93C4-108581C1E729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8BD9EF6-69A3-495F-93C4-108581C1E729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01CC555D-768F-4179-888C-4E72E31CE923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CC555D-768F-4179-888C-4E72E31CE923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01CC555D-768F-4179-888C-4E72E31CE923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01CC555D-768F-4179-888C-4E72E31CE923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9AB480E-BED5-40DF-AA23-A058A8EB6FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9AB480E-BED5-40DF-AA23-A058A8EB6FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9AB480E-BED5-40DF-AA23-A058A8EB6FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9AB480E-BED5-40DF-AA23-A058A8EB6FF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55E9358A-D4AA-4B34-95F8-975525BEBEE7}
+	EndGlobalSection
+EndGlobal
